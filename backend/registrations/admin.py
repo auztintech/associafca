@@ -28,7 +28,8 @@ class PlayerRegistrationAdmin(admin.ModelAdmin):
                    'state_of_origin', 'date_received']
     search_fields = ['full_name', 'registration_number', 'parent_email', 
                      'parent_phone']
-    readonly_fields = ['registration_number', 'date_received']
+    
+    readonly_fields = ['registration_number', 'date_received', 'submission_date']
     
     fieldsets = (
         ('Registration Info', {
@@ -67,5 +68,3 @@ class PlayerRegistrationAdmin(admin.ModelAdmin):
             'classes': ('collapse',)
         }),
     )
-
-
