@@ -1,0 +1,31 @@
+# Ignore SQLite database files
+backend/db.sqlite3
+
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore Django migration files (if you don’t want to track migrations in version control)
+backend/migrations/
+gallery/migrations/
+pages/migrations/
+registrations/migrations/
+
+# Ignore environment files (e.g., virtual environments, .env files, etc.)
+*.env
+venv/
+*.venv
+
+# Ignore IDE/editor specific files (e.g., VSCode, PyCharm)
+.vscode/
+.idea/
+
+# Ignore log files
+*.log
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore Windows system files
+Thumbs.db
