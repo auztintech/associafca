@@ -1,22 +1,6 @@
 from django.contrib import admin
-from .models import State, LGA, PlayerRegistration
+from .models import PlayerRegistration
 
-
-@admin.register(State)
-class StateAdmin(admin.ModelAdmin):
-    list_display = ['name', 'capital', 'lga_count']
-    search_fields = ['name', 'capital']
-    
-    def lga_count(self, obj):
-        return obj.lgas.count()
-    lga_count.short_description = 'Number of LGAs'
-
-
-@admin.register(LGA)
-class LGAAdmin(admin.ModelAdmin):
-    list_display = ['name', 'state']
-    list_filter = ['state']
-    search_fields = ['name', 'state__name']
 
 
 @admin.register(PlayerRegistration)

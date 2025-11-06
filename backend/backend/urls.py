@@ -25,6 +25,9 @@ from drf_spectacular.views import (
     SpectacularSwaggerView,
     SpectacularRedocView,
 )
+admin.site.site_header = "ASSOCIA FCA ADMINISTRATION"
+admin.site.site_title = "ASSOCIA FCA PORTAL"
+admin.site.index_title = "Welcome to the Admin Dashboard"
 
 urlpatterns = [
     path('admin/', admin.site.urls),
